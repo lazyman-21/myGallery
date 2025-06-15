@@ -1,0 +1,109 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f8f8;
+  text-align: center;
+  color: #000;
+}
+
+/* Judul wrapper */
+.judul-wrapper {
+  margin-top: 40px;
+}
+
+/* Judul utama */
+.judul {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-size: 36px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Subjudul */
+.subjudul {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  display: inline-block;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+}
+
+/* Card */
+.card {
+  width: 290px;
+  background-color: #f3eded;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Caption */
+.caption {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  padding: 6px 12px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .judul {
+    font-size: 28px;
+  }
+  .subjudul {
+    font-size: 18px;
+  }
+  .card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .judul {
+    font-size: 24px;
+  }
+  .subjudul {
+    font-size: 16px;
+  }
+  .caption {
+    font-size: 18px;
+  }
+}
